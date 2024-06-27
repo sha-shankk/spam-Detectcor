@@ -1,0 +1,5 @@
+Django>=3.2,<4.0
+djangorestframework>=3.12
+djangorestframework-simplejwt>=4.8
+drf-yasg>=1.20
+psycopg2>=2.9.3  # If you're using PostgreSQL

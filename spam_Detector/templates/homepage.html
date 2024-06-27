@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .icon-item {
+            text-align: center;
+            padding: 20px;
+            background-color: #f7f7f7;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .icon-item i {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #007bff; /* Change icon color as needed */
+        }
+        .icon-item p {
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <div class="icon-grid">
+            <div class="icon-item">
+                <a href="{% url 'create' %}">
+                    <i class="fas fa-address-book"></i>
+                    <p>Contacts</p>
+                </a>
+            </div>
+            <div class="icon-item">
+                <a href="{% url 'search-by-name' %}">
+                    <i class="fas fa-search"></i>
+                    <p>Search by Name</p>
+                </a>
+            </div>
+            <div class="icon-item">
+                <!-- Provide a sample pk, replace with actual dynamic value if applicable -->
+                <a href="{% url 'users:profile' pk=1 %}">
+                    <i class="fas fa-users"></i>
+                    <p>Users</p>
+                </a>
+            </div>
+            <div class="icon-item">
+                <a href="{% url 'search-by-phone' %}">
+                    <i class="fas fa-phone"></i>
+                    <p>Search by Phone</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    
