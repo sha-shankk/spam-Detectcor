@@ -1,4 +1,4 @@
-Spam Detector
+Spam_Detector
 
 A Django-based web application to detect and manage spam contacts.
 Table of Contents
