@@ -71,51 +71,6 @@ Usage
     Use the application to create, search, and manage contact information.
     Mark contacts as spam and view the spam count.
 
-Folder Structure
 
-markdown
-
-spam-detector/
-│
-├── contacts/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   ├── views.py
-│
-├── spam/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   ├── views.py
-│
-├── users/
-│   ├── migrations/
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py
-│   ├── views.py
-│
-├── spam_detector/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│
-├── manage.py
-├── requirements.txt
-└── README.md
 
 Contributions are welcome! Please open an issue or submit a pull request.
