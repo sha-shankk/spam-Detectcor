@@ -8,9 +8,6 @@ Table of Contents
     Technologies
     Setup
     Usage
-    Folder Structure
-    Contributing
-    License
 
 Introduction
 
@@ -68,9 +65,6 @@ Run the development server:
 Usage
 
     Access the admin panel at http://127.0.0.1:8000/admin to manage contacts and users.
-    Use the application to create, search, and manage contact information.
-    Mark contacts as spam and view the spam count.
+   
 
 
-
-Contributions are welcome! Please open an issue or submit a pull request.
